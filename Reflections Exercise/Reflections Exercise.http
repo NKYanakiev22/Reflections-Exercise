@@ -1,0 +1,23 @@
+@Reflections_Exercise_HostAddress = http://localhost:5288
+
+GET {{Reflections_Exercise_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+### 1. Тестване на GET заявката
+GET http://localhost:5288/api/watch/play?id=asd
+
+---
+
+### 2. Тестване на DELETE заявката
+DELETE http://localhost:5288/api/watch/deletevideo?id=1&name=test
+
+---
+
+### 3. Тестване на POST заявката
+POST http://localhost:5288/api/watch/addvideo
+Content-Type: application/json
+
+{
+  "name": "test"
+}
